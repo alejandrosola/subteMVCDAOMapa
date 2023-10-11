@@ -1,0 +1,18 @@
+a1;Plaza de Mayo;A;-34.608364;-58.372439;
+a2;Peru;A;-34.619158;-58.374170;
+a3;Piedras;A;-34.619774;-58.376996;
+b1;Leandro N. Alem;B;-34.604172;-58.369941;
+b2;Florida;B;-34.6033201;-58.3759096;
+b3;Carlos Pellegrini;B;-34.603825;-58.381745;
+c1;Retiro;C;-34.591270;-58.376053;
+c2;General San Martin;C;-34.595446;-58.377559;
+c3;Lavalle;C;-34.6020822;-58.3782963;
+d1;Catedral;D;-34.607710;-58.374061;
+d2;9 de Julio;D;-34.604441;-58.380168;
+d3;Tribunales;D;0;0;
+e1;Retiro;E;-34.591270;-58.376053;
+e2;Catalinas;E;0;0;
+e3;Correo Central;E;0;0;
+h1;Facultad de Derecho;H;0;0;
+h2;Las Heras;H;0;0;
+h3;Santa Fe;H;0;0;
