@@ -17,17 +17,17 @@ public class MyWaypoint  extends DefaultWaypoint {
         super(coord);
         this.name = name;
         
+        // Si el marcador es una estación, mostrar un puntero
         if (!isStep) {
             this.icon = new JLabel();
             ImageIcon icon = new ImageIcon(getClass().getResource("/interfaz/icon/pin.png"));
             this.icon.setIcon(icon);
-            this.icon.setText("SOY UN MARKER");
-            this.icon.setSize(new Dimension(24, 24));        	
+            this.icon.setSize(new Dimension(24, 24));       
+        // Si el marcador es un paso de la trayectoria entre dos estaciones, mostrar un punto azul 	
         } else {
         	this.icon = new JLabel();
             ImageIcon icon = new ImageIcon(getClass().getResource("/interfaz/icon/step1.png"));
             this.icon.setIcon(icon);
-            this.icon.setText("SOY UN STEP");
             this.icon.setSize(new Dimension(5, 5));
         }
 
@@ -48,7 +48,5 @@ public class MyWaypoint  extends DefaultWaypoint {
     public void setIcon(JLabel icon) {
         this.icon = icon;
     }
-
-    
 
 }

@@ -3,7 +3,7 @@ package subte.controlador;
 import java.util.List;
 
 import subte.interfaz.Interfaz;
-import subte.interfaz.Interfaz1;
+import subte.interfaz.Interfaz;
 import subte.modelo.Estacion;
 import subte.modelo.Tramo;
 import subte.negocio.Calculo;
@@ -17,7 +17,7 @@ public class AplicacionConsultas {
 	private Calculo calculo;
 
 	// vista
-	private Interfaz1 interfaz;
+	private Interfaz interfaz;
 
 	// controlador
 	private Coordinador coordinador;
@@ -33,7 +33,7 @@ public class AplicacionConsultas {
 		empresa = Empresa.getEmpresa();
 		calculo = new Calculo();
 		coordinador = new Coordinador();
-		interfaz = new Interfaz1();
+		interfaz = new Interfaz();
 
 		/* Se establecen las relaciones entre clases */
 		calculo.setCoordinador(coordinador);
@@ -53,7 +53,7 @@ public class AplicacionConsultas {
 		Estacion origen = interfaz.ingresarEstacionOrigen(coordinador.listarEstaciones());
 		Estacion destino = interfaz.ingresarEstacionDestino(coordinador.listarEstaciones());
 
-		// Realizar c�lculo
+		// Realizar cálculo
 		calculo.cargarDatos(coordinador.listarTramos(), coordinador.listarEstaciones());
 
 		List<Tramo> recorrido = null;
@@ -61,7 +61,7 @@ public class AplicacionConsultas {
 			recorrido = calculo.rapido(origen, destino);
 
 		// Mostrar resultado
-		interfaz.resultado(recorrido);
+		interfaz.mostrarResultado(recorrido);
 	}
 
 }
